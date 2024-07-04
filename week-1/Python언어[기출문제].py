@@ -13,12 +13,17 @@
 #         print(item, end='')
 #     print()
 
-class Soojebi:
-    li = ["Seoul", "Kyeonggi", "Inchon", "Daejeon", "Daegu", "Pusan"]
+# class Soojebi:
+#     li = ["Seoul", "Kyeonggi", "Inchon", "Daejeon", "Daegu", "Pusan"]
     
-s = Soojebi()
-str01 = ""
-for i in s.li:
-    str01 = str01 + i[0]
+# s = Soojebi()
+# str01 = ""
+# for i in s.li:
+#     str01 = str01 + i[0]
     
-print(str01)    
+# print(str01)    
+
+a = []
+for i in range(1, 5):
+    a.append(i)
+print(a)
