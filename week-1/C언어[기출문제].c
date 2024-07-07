@@ -58,15 +58,38 @@
 //     printf("%d", sum);
 // }
 
-void main(){
-    char *p = "KOREA";
-    printf("%s\n", p);
-    printf("%s\n", p+3);
-    printf("%c\n", *p);
-    printf("%c\n", *(p+3));
-    printf("%c\n", *p+2);
+// void main(){
+//     char *p = "KOREA";
+//     printf("%s\n", p);
+//     printf("%s\n", p+3);
+//     printf("%c\n", *p);
+//     printf("%c\n", *(p+3));
+//     printf("%c\n", *p+2);
     
-}
+// }
 
+// struct Soojebi {
+//     char name[10];
+//     int age;
+// };
 
+// void main(){
+//     struct Soojebi s[] = {"Kim", 28, "Lee", 38, "Seo", 50, "Park", 35};
+//     struct Soojebi *p;
+//     p = s;
+//     p++;
+//     printf("%s\n", p->name);
+//     printf("%d\n", p->age);
+// }
 
+// void main(){
+//     int ary[3] = {1};
+//     int s = 0;
+//     int i = 0;
+//     ary[1] = *(ary+0) + 2;
+//     ary[2] = *ary + 3;
+//     for (i = 0; i < 3; i++){
+//         s = s + ary[i];
+//     }
+//     printf("%d", s);
+// }
