@@ -23,7 +23,25 @@
     
 # print(str01)    
 
-a = []
-for i in range(1, 5):
-    a.append(i)
-print(a)
+# a = []
+# for i in range(1, 5):
+#     a.append(i)
+# print(a)
+
+# s = "soojebi"
+# t = s[:-4] + s[2:]
+# print(t)
+
+dict = {
+    "name": "수제비",
+    "book": ["정보처리기사", "정보처리산업기사", "정보처리기능사", "빅데이터분석기사"],
+    "site": "www.soojebi.com"
+}
+
+dict["book"][0] = "정보처리기사 실기"
+
+for i in range(len(dict["book"]) + 1):
+    if i < len(dict["book"]):
+        print("book:", dict["book"][i])
+    else:
+        print("book:", dict["book"][i % len(dict["book"])])

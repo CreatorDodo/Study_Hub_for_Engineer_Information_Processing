@@ -139,3 +139,175 @@
 //     printf("%d", fn(a));
 // }
 
+// void main() {
+//     int number = 1234;
+//     int div = 10;
+//     int result = 0;
+
+//     while (number > 0){
+//         result = result * div;
+//         result = result + number % div;
+//         number = number / div;
+//     }
+
+//     printf("%d", result);
+// }
+
+// int isPrime(int number) {
+//     int i;
+//     for (i = 2; i < number; i++){
+//         if (number % i == 0) return 0;
+//     }
+//     return 1;
+// }
+
+// void main(){
+//     int number = 13195, max_div=0, i;
+//     for (i = 2; i < number; i++)
+//         if (isPrime(i) == 1 && number % i == 0)
+//             max_div = i;
+//     printf("%d", max_div);
+// }
+
+// struct student{
+//     int n, g;
+// };
+
+// int main(){
+//     struct student st[2];
+//     int i = 0;
+//     for (i; i < 2; i++){
+//         st[i].n = i;
+//         st[i].g = i+1;
+//     }
+//     printf("%d", st[0].n + st[1].g);
+//     return 0;
+    
+// }
+
+// int len(char *p);
+
+// int main(){
+//     char *p1 = "2022";
+//     char *p2 = "202207";
+//     printf("%d", len(p1) + len(p2));
+//     return 0;
+// }
+
+// int len(char *p){
+//     int r = 0;
+//     while (*p != '\0'){
+//         p++;
+//         r++;
+//     }
+//     return r;
+// }
+
+// void main(){
+//     int a[4] = {0, 2, 4, 8};
+//     int b[3];
+//     int* pl;
+//     int i, j;
+//     int sum = 0;
+//     for (i = 1; i < 4; i++){
+//         pl = a + i;
+//         b[i-1] = *pl - a[i-1];
+//         sum = sum + a[i] + b[i-1];
+//     }
+//     printf("%d", sum);
+// }
+
+// int calc(int w, int h, int j, int i){
+//     if(i>=0 && i<h && j>=0 && j<w) return 1;
+//     return 0;
+// }
+
+// int main(){
+//     int field[4][4] = {{0, 1, 0, 1}, {0, 0, 0, 1}, {1, 1, 1, 0}, {0, 1, 1, 1}};
+//     int mines[4][4] = {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
+//     int w = 4, h = 4;
+//     int i, j, k, l;
+
+//     for (l = 0; l < h; l++){
+//         for (k = 0; k < w; k++){
+//             if (field[l][k] == 0)
+//                 continue;
+            
+//             for (i = l-1; i <= l+1; i++){
+//                 for (j = k-1; j <= k+1; j++){
+//                     if (calc(w, h, j, i) == 1){
+//                         mines[i][j] += 1;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     for (l = 0; l < h; l++){
+//         for (k = 0; k < w; k++){
+//             printf("%d ", mines[l][k]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// void main(){
+//     int n, k, s;
+//     int el = 0;
+//     for (n = 6; n <= 30; n++){
+//         s=0;
+//         k=n/2;
+//         for (int j = 1; j <= k; j++){
+//                 if (n % j == 0){
+//                     s=s+j;
+//                 }
+//             }
+//         if (s == n){
+//             el++;
+//         }
+//     }
+//     printf("%d", el);
+// }
+
+// int main() {
+//     int i, j, k;
+//     for (i = 1; i <= 4; i++) {
+//         for (j = 1; j <= i; j++) {
+//             for (k = 1; k <= j; k++) {
+//                 printf("%c", 'A' + i - 1);
+//             }
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// int main() {
+//     int a[3][3] = {{1, 2, -3}, {4}, {-5, 6}};
+//     int i, j, sum = 0;
+//     for (i = 0; i < 3; i++) {
+//         for (j = 0; j < 3; j++) {
+//             if (a[i][j] > 0) {
+//                 sum += a[i][j];
+//             } else if (a[i][j] < 0) {
+//                 sum -= a[i][j];
+//             }
+//         }
+//     }
+//     printf("%d", sum);
+//     return 0;
+// }
+
+// void main() {
+//     int i;
+//     int sum = 0;
+//     int arr[5] = {2, 3, 5, 7, 11};
+//     int *p = arr + 2;
+
+//     for (i = -1; i < 2; i++) {
+//         sum += p[i];
+//     }
+//     printf("%d", sum);
+// }
+
