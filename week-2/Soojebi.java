@@ -153,42 +153,210 @@
 //     }
 // }
 
-class A {
-    String s;
-    A() {
-        System.out.print("A");
-    }
-    A(String s) {
-        this.s = s;
-        System.out.print(this.s);
-    }
-    public void fn() {
-        System.out.print("C");
-    }
-}
+// class A {
+//     String s;
+//     A() {
+//         System.out.print("A");
+//     }
+//     A(String s) {
+//         this.s = s;
+//         System.out.print(this.s);
+//     }
+//     public void fn() {
+//         System.out.print("C");
+//     }
+// }
 
-class B extends A {
-    String s;
-    B() {
-        System.out.print("B");
-    }
-    B(String s) {
-        super("hello ");
-        this.s = s;
-        System.out.print(this.s);
-    }
-    public void fn() {
-        super.fn();
-        System.out.print("D");
-    }
-}
+// class B extends A {
+//     String s;
+//     B() {
+//         System.out.print("B");
+//     }
+//     B(String s) {
+//         super("hello ");
+//         this.s = s;
+//         System.out.print(this.s);
+//     }
+//     public void fn() {
+//         super.fn();
+//         System.out.print("D");
+//     }
+// }
+
+// public class Soojebi {
+//     public static void main(String args[]) {
+//         A obj1 = new B();
+//         obj1.fn();
+//         System.out.println();
+//         A obj2 = new B("soojebi");
+//         obj2.fn();
+//     }
+// }
+
+// class Soojebi {
+//     static private Soojebi instance = null;
+//     private int count = 0;
+//     static public Soojebi get() {
+//         if (instance == null) {
+//             instance = new Soojebi();
+//         }
+//         return instance;
+//     }
+//     public void count() {
+//         count++;
+//     }
+//     public int getCount() {
+//         return count;
+//     }
+// }
+//     public class Soojebi2 {
+//        public static void main(String[] args) {
+//         Soojebi s1 = Soojebi.get();
+//         s1.count();
+//         Soojebi s2 = Soojebi.get();
+//         s2.count();
+//         Soojebi s3 = Soojebi.get();
+//         s3.count();
+//         System.out.print(s1.getCount());
+    
+//     }
+// }
+
+// public class Soojebi {
+//     public static void main(String[] args) {
+//         System.out.print(Soojebi.check(1));
+//     }
+//     static String check(int num) {
+//         return (num >= 0) ? "positive" : "negative";
+//     }
+    
+// }
+ 
+// public class Soojebi {
+//     public static void main(String[] args) {
+//         int a = 3, b = 4, c = 3, d = 5;
+//         if ((a == 2 | a == c) & !(c < d) & (1 == b ^ c != d)) {
+//             a = b + c;
+//             if (7 == b ^ c != a) {
+//                 System.out.println(a);
+//             } else {
+//                 System.out.println(b);
+//             }
+//         } else {
+//             a = c + d;
+//             if (7 == c ^ d != a) {
+//                 System.out.println(a);
+//             } else {
+//                 System.out.println(d);
+//             }
+//         }
+//     }
+// }
+
+// class A{
+//     int a;
+//     int b;
+// }
+
+// public class Soojebi {
+    
+//     static void func1(A m){
+//         m.a *= 10;
+//     }
+
+//     static void func2(A m){
+//         m.a += m.b;
+//     }
+
+//     public static void main(String[] args) {
+//         A m = new A();
+//         m.a = 100;
+//         func1(m);
+//         m.b = m.a;
+//         func2(m);
+
+//         System.out.printf("%d", m.a);
+//     }
+// }
+
+// class Car implements Runnable{
+//     int a;
+//     public void run(){
+//       //  ...
+//     }
+// }
+
+// public class Soojebi {
+//     public static void main(String[] args) {
+//         Thread t1 = new Thread(new Car());
+//         t1.start();
+//     }
+// }
+
+// public class Soojebi {
+//     int a;
+//     public Soojebi(int a){
+//         this.a = a;
+//     }
+//     int func() {
+//         int b = 1;
+//         for (int i = 1; i < a; i++) {
+//             b = a * i + b;
+//         }
+//         return a + b;
+//     }
+//     public static void main(String[] args) {
+//         Soojebi obj = new Soojebi(3);
+//         obj.a = 5;
+//         int b = obj.func();
+//         System.out.println(obj.a + b);
+//     }
+// }
+
+// public class Soojebi {
+//     static int[] MakeArray(){
+//         int[] tempArr = new int[4];
+//         for (int i = 0; i < tempArr.length; i++) {
+//             tempArr[i] = i;
+//         }
+//         return tempArr;
+//     }
+    
+//     public static void main(String[] args) {
+//         int[] intArr;
+//         intArr = MakeArray();
+        
+//         for (int i = 0; i < intArr.length; i++) {
+//             System.out.print(intArr[i]);
+//         }
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int[] result = new int[5];
+//         int[] arr = {79, 34, 10, 99, 50};
+//         for (int i = 0; i < 5; i++) {
+//             result[i] = 1;
+//             for (int j = 0; j < 5; j++) {
+//                 if (arr[i] < arr[j])    result[i]++;
+                
+//             }
+//         }
+//         for (int k = 0; k < 5; k++) {
+//             System.out.print(result[k]);
+//         }
+//     }
+// }
 
 public class Soojebi {
-    public static void main(String args[]) {
-        A obj1 = new B();
-        obj1.fn();
-        System.out.println();
-        A obj2 = new B("soojebi");
-        obj2.fn();
+    public static void main(String[] args) {
+        int a = 0;
+        for(int i=1; i<999; i++){
+            if(i%3 == 0 && i%2 != 0){
+                a = i;
+            }
+        }
+        System.out.println(a);
     }
 }
