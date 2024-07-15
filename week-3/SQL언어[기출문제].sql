@@ -44,3 +44,5 @@ GROUP BY 학과;
 
 SELECT 학과, COUNT(*) AS '학과별튜플수' FROM 학생
 GROUP BY 학과;
+
+CREATE INDEX 사번인덱스 ON 사원(사번);

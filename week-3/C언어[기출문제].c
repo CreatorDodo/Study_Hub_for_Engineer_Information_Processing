@@ -326,26 +326,78 @@
 
 // 4 3 2 1 1 2 3 4
 
-void bubbleSort(int arr[], int n) {
-    int i, j, temp;
-    for (i = 0; i < n-1; i++) {
-        for (j = 0; j < n-i-1; j++) {
-            if (arr[j] > arr[j+1]) {
-                temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-        }
-    }
-}
+// void bubbleSort(int arr[], int n) {
+//     int i, j, temp;
+//     for (i = 0; i < n-1; i++) {
+//         for (j = 0; j < n-i-1; j++) {
+//             if (arr[j] > arr[j+1]) {
+//                 temp = arr[j];
+//                 arr[j] = arr[j+1];
+//                 arr[j+1] = temp;
+//             }
+//         }
+//     }
+// }
 
-int main() {
-    int arr[] = {64, 34, 25, 12};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    bubbleSort(arr, n);
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-    return 0;
-}
+// int main() {
+//     int arr[] = {64, 34, 25, 12};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     bubbleSort(arr, n);
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+// int Soojebi(int num) {
+//     int i;
+//     for (i = 2; i < num; i++) {
+//         if (num % i == 0) {
+//             return 0;
+//         }
+//     }
+//     return 1;
+// }
+
+// void main() {
+//     int num = 10, cnt = 0, i;
+//     for (i = 2; i < num; i++) 
+//         cnt += Soojebi(i);
+//     printf("%d\n", cnt);
+    
+// }
+
+// void main() {
+//     int hist[6] = {0,};
+//     int n, i = 0;
+//     srand(time(NULL));
+
+//     do{
+//         i++;
+//         n = rand() % 6 + 1;
+//         hist[n-1]++;
+//     } while (i < 10);
+    
+//     for
+    
+//     (i = 0; i < 6; i++){
+//         printf("%d: %d\n", i, hist[i]);
+//     }
+// }
+
+// void main() {
+//     int num[10];
+//     int min = 9999;
+//     int i;
+//     for(i = 0; i < 10; i++){
+//         scanf("%d", &num[i]);
+//      }
+//     for(i = 0; i < 10; i++){
+//         if (num[i] < min){
+//             min = num[i];
+//         }
+//     }
+//     printf("%d", min);
+// }
+
