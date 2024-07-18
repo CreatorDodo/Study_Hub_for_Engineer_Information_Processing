@@ -58,10 +58,66 @@
 
 # print(k(10))
 
-def af(a, b):
-    return a + b
+# def af(a, b):
+#     return a + b
 
-def sf(a, b):
-    return a - b
+# def sf(a, b):
+#     return a - b
 
-print(sf(af(4, 5), 6))
+# print(sf(af(4, 5), 6))
+
+# a = 10
+# b = 15
+# if a > b:
+#     m = b
+# else:
+#     m = a
+
+# for i in range(m, 0, -1):
+#     if a % i == 0 and b % i == 0:
+#         print(i)
+#         break
+
+# temp = 0
+# min_index = 0
+# a = [4, 2, 3, 5, 1]
+# for i in range(0, 4):
+#     min_index = i
+    
+#     for j in range(i + 1, 5):
+#         if a[j] < a[min_index]:
+#             min_index = j
+            
+#     temp = a[min_index]
+#     a[min_index] = a[i]
+#     a[i] = temp
+    
+# print(a)
+    
+# a =['Hello', 'Python', "World"]
+# print(a[0][3:], a[2][:-3])
+
+# class A:
+#     a = 0
+#     def __init__(self):
+#         self.a += 2
+
+#     def fn(self):
+#         self.a += 3
+        
+# class B(A):
+#     def __init__(self):
+#         self.a += 5
+
+#     def fn(self):
+#         self.a += 7
+        
+# a = B()
+# a.fn()
+# print(a.a)
+
+# d = {'A':5, 'B':4}
+# d['B'] = 7
+# d['C'] = 6
+# print(d)
+
