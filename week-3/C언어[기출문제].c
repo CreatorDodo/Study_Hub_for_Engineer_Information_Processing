@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 // void main(){
 //     int i, j;
 //     int temp;
@@ -458,3 +459,48 @@
 //     printf("%s", str);
 // }
 
+// int main(int argc, char *argv[]) {
+//     char str1[20] = "KOREA";
+//     char str2[20] = "LOVE";
+//     char* p1 = NULL;
+//     char* p2 = NULL;
+//     p1 = str1;
+//     p2 = str2;
+//     str1[1] = p2[2];
+//     str2[3] = p1[4];
+//     strcat(str1, str2);
+//     printf("%c", *(p1+2));
+//     return 0;
+// }
+
+// int main(int argc, char *argv[]) {
+//     int arr[2][3] ={1, 2, 3, 4, 5, 6};
+//     int (*p)[3] = NULL;
+//     p = arr;
+//     printf("%d", *(p[0]+1)+ *(p[1]+2));
+//     printf("%d", *(*(p+1)+0) + *(*(p+1)+1));
+//     return 0;
+// }
+
+// int main(int argc, char *argv[]) {
+//     int n1 = 1, n2 = 2, n3 = 3;
+//     int r1, r2, r3;
+
+//     r1 = (n2<=2) || (n3>3);
+//     r2 =!n3;
+//     r3 = (n1 > 1) && (n2 < 3);
+//     printf("%d", r3-r2+r1);
+//     return 0;
+// }
+
+int fn(char* a){
+    int i = 0;
+    for(i = 0; a[i] != '\0'; i++);
+    return i;
+    
+}
+
+void main() {
+    char a[10] = "Hello";
+    printf("%d", fn(a));
+}
