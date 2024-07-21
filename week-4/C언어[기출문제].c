@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 // void main(){
 //     int i, j;
 //     int temp;
@@ -493,14 +494,130 @@
 //     return 0;
 // }
 
-int fn(char* a){
-    int i = 0;
-    for(i = 0; a[i] != '\0'; i++);
-    return i;
-    
-}
+// int fn(char* a){
+//     int i = 0;
+//     for(i = 0; a[i] != '\0'; i++);
+//     return i;    
+// }
 
-void main() {
-    char a[10] = "Hello";
-    printf("%d", fn(a));
-}
+// void main() {
+//     char a[10] = "Hello";
+//     printf("%d", fn(a));
+// }
+
+// struct st{
+//     int a;
+//     int c[10];
+// };
+
+// int main(int argc, char *argv[]) {
+//     int i = 0;
+//     struct st ob1;
+//     struct st ob2;
+//     ob1.a = 0;
+//     ob2.a = 0;
+
+//     for (i = 0; i < 10; i++){
+//         ob1.c[i] = i;
+//         ob2.c[i] = ob1.c[i] + i;
+//     }
+
+//     for (i = 0; i < 10; i = i + 2){
+//         ob1.a = ob1.a + ob1.c[i];
+//         ob2.a = ob2.a + ob2.c[i];
+//     }
+
+//     printf("%d", ob1.a + ob2.a);
+//     return 0;
+// }
+
+// int f(int i);
+
+// void main() {
+//     printf("%d %d %d", f(1), f(5), f(-2));
+// };
+
+// int f(int i) {
+//     if (i <= 2)
+//         return 1;
+//     else
+//         return f(i-1) + f(i-2);
+// }
+
+// void main() {
+//     if(0.5){
+//         printf("A");
+//     }
+//     else{
+//         printf("B");
+//     }
+// }
+
+// void main() {
+//     int a = 1, b = 3;
+//     switch (++a + b) {
+//         case 3: printf("A");
+//         case 4: printf("B");
+//             break; case 5: printf("C");
+//         default: printf("E");
+//     }
+// }
+
+// void main(){
+//     int i=2;
+//     while(--i){
+//         printf("%d", i);
+//     }
+// }
+
+// int a(int i){ return i; }
+// int b(int i, int j){ return i-j; }
+
+// void main(){
+//     int (*p)(int);
+//     int (*pf)(int, int);
+//     p = a;
+//     printf("%d", p(5));
+//     pf = b;
+//     printf("%d", pf(5, 4));
+// }
+
+// int Soojebi(int base, int exp){
+//     int i, result = 1;
+//     for (i = 0; i < exp; i++){
+//         result *= base;
+//         return result;
+//     }
+// }
+
+// void main(){
+//     printf("%d", Soojebi(2, 10));
+// }
+
+// int fn(char* a){
+//     int i=0;
+//     for (i = 0; a[i] != '\0'; i++);
+//     return i;
+// }
+
+// void main(){
+//     char a[10] = "Hello";
+//     printf("%d", fn(a));
+// }
+
+// int main(int argc, char *argv[]){
+//     int a = 5, b = 3, c = 12;
+//     int t1, t2, t3;
+//     t1 = a && b;
+//     t2 = a || b;
+//     t3 = !c;
+//     printf("%d", t1 + t2 + t3);
+//     return 0;
+// }
+
+// void main(){
+//     int a=0, i=3;
+//     for( ; i<100; i*=3)
+//         a += i;
+//     printf("%d", i);
+// }

@@ -349,14 +349,252 @@
 //     }
 // }
 
-public class Soojebi {
+// public class Soojebi {
+//     public static void main(String[] args) {
+//         int a = 0;
+//         for(int i=1; i<999; i++){
+//             if(i%3 == 0 && i%2 != 0){
+//                 a = i;
+//             }
+//         }
+//         System.out.println(a);
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int x = 1;
+//         int tX = 0, t_X = 0;
+
+//         tX = (x > 0) ? x : -x;
+//         if(x > 0) t_X = x;
+//         else t_X = -x;
+
+//         System.out.println(tX + " " + t_X);
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int a = 17;
+//         a += 1;
+//         a -= 2;
+//         a *= 3;
+//         a /= 4;
+//         a %= 5;
+//         System.out.println(a);
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int a = 26;
+//         int b = 91;
+//         int i = 0, g = 0;
+
+//         int min = a < b ? a : b;
+
+//         for(i = 2; i < min; i++){
+//             if(a % i == 0 && b % i == 0){
+//                 g = i;
+//             }
+//         }
+
+//         System.out.println(g);       
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int []a = new int[8];
+//         int i=0;
+//         int n=11;
+//         while (n > 0) {
+//             a[i++] = n%2;
+//             n /= 2;
+//         }
+//         for (i=7; i>=0; i--) {
+//             System.out.print(a[i]);
+//         }
+//     }
+// }
+
+// class Soojebi {
+//     public static void main(String[] args) {
+//         int [][]arr = new int[3][3];
+
+//         init(arr);
+//         hourGlass(arr);
+//         arrayPrint(arr);
+//     }
+
+//     public static void init(int arr[][]){
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = 0; j < arr[0].length; j++){
+//                 arr[i][j] = 0;
+//             }
+//         }
+//     }
+
+//     public static void hourGlass(int arr[][]){
+//         int v = 0;
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = i; j < arr[0].length; j++){
+//                 arr[i][j] = ++v;
+//             }
+//         }
+//     }
+
+//     public static void arrayPrint(int arr[][]){
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = 0; j < arr[0].length; j++){
+//                 if (arr[i][j] == 0) {
+//                     System.out.print(" ");
+//                 } else {
+//                     System.out.print(arr[i][j]);
+//                 }
+//             }
+//             System.out.println("");
+//         }
+//     }
+// }
+
+// public class Soojebi{
+//     public static void main(String[] args) {
+//         System.out.println("" + 1 + 2);
+//         System.out.println(1 + 2 + "");
+//     }
+// }
+
+// class Parent{
+//     public Parent(){
+//         System.out.println("A");
+//     }
+//     public void fn(){
+//         System.out.println("B");
+//     }
+//     public void fnA(){
+//         System.out.println("C");
+//     }
+// }
+
+// class Child extends Parent{
+//     public Child(){
+//         System.out.println("D");
+//     }
+//     public void fn(){
+//         System.out.println("E");
+//     }
+//     public void fnB(){
+//         System.out.println("F");
+//     }
+// }
+
+// public class Soojebi{
+//     public static void main(String[] args) {
+//         Child c = new Child();
+//         c.fn();
+//         c.fnA();
+//     }
+// }
+
+// public class Soojebi{
+//     public static int fn(int key, int[] arr, int cnt){
+//         int mid;
+//         int low = 0, high = cnt-1;
+//         int i = 0;
+
+//         while(low <= high){
+//             i++;
+//             mid = (low + high) / 2;
+            
+//             if(key == arr[mid]){
+//                 return i;
+//             }
+//             else if(key < arr[mid]){
+//                 high = mid - 1;
+//             }
+//             else{
+//                 low = mid + 1;
+//             }
+//         }
+
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         int []a = {92, 100, 215, 341, 625, 716, 812, 813, 820, 901, 902};
+//         int cnt = fn(92, a, 11);
+//         System.out.println(cnt);
+//     }
+// }
+
+// class Parent{
+//     String className = "Parent Class";
+//     public void info(){
+//         System.out.println(className);
+//     }
+// }
+
+// class Child extends Parent{
+//     String className = "Child Class";
+//     public void info(){
+//         super.info();
+//         System.out.println(className);
+//     }
+// }
+
+// public class Soojebi{
+//     public static void main(String[] args) {
+//         Parent p = new Parent();
+//         p.info();
+//         Child c = new Child();
+//         c.info();
+//     }
+// }
+
+// public class Soojebi{
+//     public static void main(String[] args) {
+//         int n = 10;
+//         increase(n);
+//         System.out.println(n);
+//     }
+
+//     static void increase(int n){
+//         n = n + 1;
+//     }
+// }
+
+// class Soojebi{
+//     public static void main(String[] args) {
+//         int p = 0;
+
+//         for(int i = 2; i < 100; i++){
+//             int t = (int)Math.sqrt(i);
+//             for(int j = 2; j <= t; j++){
+//                 if(i % j == 0){
+//                     break;
+//                 }
+
+//                 if(j == t){
+//                     p = i;
+//                 }
+//             }
+//         }
+
+//         System.out.println(p);
+//     }
+// }
+
+public class Soojebi{
     public static void main(String[] args) {
-        int a = 0;
-        for(int i=1; i<999; i++){
-            if(i%3 == 0 && i%2 != 0){
-                a = i;
+        int i = 0, j = 0;
+        for(int k = 0; k < 3; k++){
+            if((++i > 1) && (++j > 1)){
+                i++;
             }
         }
-        System.out.println(a);
+
+        System.out.println(i + " " + j);
     }
 }

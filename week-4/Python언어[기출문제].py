@@ -121,3 +121,35 @@
 # d['C'] = 6
 # print(d)
 
+# a = ["Hello", "Python", "World"]
+# for i in a:
+#     print("abc")
+
+# a = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+# print(a[3])
+# print(a[-5])
+# print(a[:7:2])
+# print(a[3:])
+# print(a[:5])
+
+# sum = 0
+# a = [1, 2, 3, 4, 5, 6, 7, 8]
+# b = a[::2]
+# for i in range(0, 3):
+#     sum += b[i]
+# print(sum)
+
+def fn(x):
+    n = len(x)
+    
+    for i in range(1, n):
+        now = x[i]
+        j = i - 1
+        while j >= 0 and x[j] > now:
+            x[j + 1] = x[j]
+            j -= 1
+        x[j + 1] = now
+        
+x = [5, 8, 2, 1, 4, 3]
+fn(x)
+print(x)
