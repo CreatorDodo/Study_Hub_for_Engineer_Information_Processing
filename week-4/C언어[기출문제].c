@@ -651,3 +651,51 @@
 //     scanf("%d", &a);
 //     printf("%d", fn(a));
 // }
+
+void main() {
+    int number = 1234;
+    int div = 10;
+    int result = 0;
+
+    while ( number > 0){
+        result = result * div;
+        result = result + number % div;
+        number = number / div;
+    }
+    
+    printf("%d", result);
+}
+
+int isPrime(int number) {
+    int i;
+    for (i = 2; i < number; i++){
+        if (number % i == 0) return 0;
+    }
+    return 1;
+}
+
+void main(){
+    int number = 13195, max_div=0, i;
+    for (i = 2; i < number; i++)
+        if (isPrime(i) == 1 && number % i == 0)
+            max_div = i;
+    printf("%d", max_div);
+}
+
+void main() {
+    int n, k, s;
+    int el = 0;
+    for (n = 6; n <= 30; n++){
+        s=0;
+        k=n/2;
+        for (int j = 1; j <= k; j++){
+                if (n % j == 0){
+                    s=s+j;
+                }
+            }
+        if (s == n){
+            el++;
+        }
+    }
+    printf("%d", el);
+}
