@@ -146,3 +146,4 @@ SELECT 과목이름, MIN(점수) AS 최소점수, MAX(점수) AS 최대점수 FR
 GROUP BY 과목이름 HAVING AVG(점수) >= 90;
 
 SELECT 학과, COUNT(학과) AS 학과별튜플수 FROM 학생 GROUP BY 학과;
+
