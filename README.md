@@ -1,2 +1,2 @@
-# Study-Hub-for-Information-Processing-Engineer
+# Study_Hub_for_Engineer_Information_Processing
 정보처리기사 자료집
